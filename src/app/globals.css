@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* خلفية الصفحة ولون النص الافتراضي */
+body { @apply bg-concrete text-asphalt antialiased; }
+
+/* احترام تفضيل المستخدم بتقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
